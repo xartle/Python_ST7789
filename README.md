@@ -2,8 +2,9 @@
 Python library for using ST7789-based IPS LCD with Raspberry Pi
 (240x240 pixels, SPI interface, 7 pins without CS pin)
 
+
 Code snippet for GMT130 display
-''' 
+```
 import Adafruit_GPIO.SPI as SPI
 import ST7789 as TFT
 import RPi.GPIO as GPIO
@@ -28,4 +29,4 @@ disp.clear()
 GPIO.setwarnings(True)  # Enable warnings
 GPIO.setmode(GPIO.BCM)  # or GPIO.BOARD, depending on the wiring
 GPIO.setup(backlight, GPIO.OUT, initial=GPIO.HIGH)
-'''
+
